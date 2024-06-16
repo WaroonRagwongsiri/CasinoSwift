@@ -96,6 +96,7 @@
 		84700EA92C1E9DF1008DC4A1 /* CasinoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				84700EDF2C1EBA61008DC4A1 /* New Group */,
 				84700ED42C1E9E53008DC4A1 /* model */,
 				84700EAA2C1E9DF1008DC4A1 /* CasinoSwiftApp.swift */,
 				84700EAC2C1E9DF1008DC4A1 /* ContentView.swift */,
@@ -136,6 +137,13 @@
 				84700ED52C1E9E63008DC4A1 /* User.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		84700EDF2C1EBA61008DC4A1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

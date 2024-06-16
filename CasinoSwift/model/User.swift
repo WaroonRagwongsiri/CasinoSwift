@@ -14,5 +14,11 @@ class User{
         self.balance = balance
     }
     
+    func deposit(money:Int){
+        self.balance += money
+    }
     
+    func withdraw(money:Int){
+        self.balance -= money
+    }
 }
