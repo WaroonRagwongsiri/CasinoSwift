@@ -23,6 +23,9 @@ class User{
     }
     
     func withdraw(money:Int){
+        if(self.balance <= money){
+            return
+        }
         self.balance -= money
     }
 }
