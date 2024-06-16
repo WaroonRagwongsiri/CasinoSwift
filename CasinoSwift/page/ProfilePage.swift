@@ -13,7 +13,9 @@ struct ProfilePage: View {
     
     @Query private var userDatas:[User]
     
-    @State var isShowTransactionPage:Bool = false
+    @State var isShowTransactionPageDeposit:Bool = false
+    @State var isShowTransactionPageWithdraw:Bool = false
+    
     
     var body: some View {
         VStack(){
@@ -26,29 +28,30 @@ struct ProfilePage: View {
                 .padding(
                     EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0)
                 )
+            Text("\(userDatas[0].name)")
             Text("Balance : \(userDatas[0].balance)").font(.title)
                 .padding(
                     EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0)
                 )
             Button("Deposit",action: {
-                isShowTransactionPage.toggle()
+                isShowTransactionPageDeposit.toggle()
             })
                 .padding(
                     EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0)
                 )
-                .sheet(isPresented: $isShowTransactionPage, content: {
+                .sheet(isPresented: $isShowTransactionPageDeposit, content: {
                     Transaction(isDeposit: .constant(true))
                 })
                 .presentationDetents([.medium,.large])
                 .presentationDragIndicator(.visible)
             
             Button("Withdraw",action: {
-                isShowTransactionPage.toggle()
+                isShowTransactionPageWithdraw.toggle()
             })
                 .padding(
                     EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0)
                 )
-                .sheet(isPresented: $isShowTransactionPage, content: {
+                .sheet(isPresented: $isShowTransactionPageWithdraw, content: {
                     Transaction(isDeposit: .constant(false))
                 })
                 .presentationDetents([.medium,.large])

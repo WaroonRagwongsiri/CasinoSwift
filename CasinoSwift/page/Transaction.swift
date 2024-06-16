@@ -16,11 +16,10 @@ struct Transaction: View {
     @State var amountString:String = ""
     
     func transaction(){
-        var amount:Int = (amountString as NSString).integerValue
         if(isDeposit){
-            userDatas[0].balance += amount
+            userDatas[0].deposit(money: (amountString as NSString).integerValue)
         }else{
-            userDatas[0].balance -= amount
+            userDatas[0].withdraw(money:(amountString as NSString).integerValue)
         }
         try! context.save()
     }
@@ -41,7 +40,8 @@ struct Transaction: View {
                         }).foregroundStyle(.red)
                         Spacer()
                         Button(isDeposit ? "Deposit" : "Withdraw",action: {
-                            
+                            transaction()
+                            dismiss()
                         })
                         Spacer()
                     })

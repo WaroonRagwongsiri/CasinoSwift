@@ -21,17 +21,18 @@ struct ContentView: View {
     }
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Button("Profile",action: {
-                    isProfileActive.toggle()
-                })
-                NavigationLink(destination: ProfilePage(), isActive: $isProfileActive, label: {EmptyView()}).hidden()
+        TabView{
+            MainPage().tabItem {
+                Image(systemName: "gamecontroller")
+                Text("Game")
             }
-            .padding()
+            ProfilePage().tabItem {
+                Image(systemName: "person.circle")
+                Text("Profile")
+            }
         }.onAppear(perform: {
             setUser()
-    })
+        })
     }
 }
 
