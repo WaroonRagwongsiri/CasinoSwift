@@ -15,6 +15,8 @@
 		84700EC62C1E9DF3008DC4A1 /* CasinoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84700EC52C1E9DF3008DC4A1 /* CasinoSwiftUITests.swift */; };
 		84700EC82C1E9DF3008DC4A1 /* CasinoSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84700EC72C1E9DF3008DC4A1 /* CasinoSwiftUITestsLaunchTests.swift */; };
 		84700ED62C1E9E63008DC4A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84700ED52C1E9E63008DC4A1 /* User.swift */; };
+		84700ED92C1E9F2A008DC4A1 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84700ED82C1E9F2A008DC4A1 /* ProfilePage.swift */; };
+		84700EDB2C1EA166008DC4A1 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84700EDA2C1EA166008DC4A1 /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		84700EC52C1E9DF3008DC4A1 /* CasinoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasinoSwiftUITests.swift; sourceTree = "<group>"; };
 		84700EC72C1E9DF3008DC4A1 /* CasinoSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasinoSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		84700ED52C1E9E63008DC4A1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84700ED82C1E9F2A008DC4A1 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		84700EDA2C1EA166008DC4A1 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		84700EA92C1E9DF1008DC4A1 /* CasinoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				84700EDC2C1EA227008DC4A1 /* component */,
+				84700ED72C1E9F16008DC4A1 /* page */,
 				84700ED42C1E9E53008DC4A1 /* model */,
 				84700EAA2C1E9DF1008DC4A1 /* CasinoSwiftApp.swift */,
 				84700EAC2C1E9DF1008DC4A1 /* ContentView.swift */,
@@ -136,6 +142,22 @@
 				84700ED52C1E9E63008DC4A1 /* User.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		84700ED72C1E9F16008DC4A1 /* page */ = {
+			isa = PBXGroup;
+			children = (
+				84700ED82C1E9F2A008DC4A1 /* ProfilePage.swift */,
+				84700EDA2C1EA166008DC4A1 /* Transaction.swift */,
+			);
+			path = page;
+			sourceTree = "<group>";
+		};
+		84700EDC2C1EA227008DC4A1 /* component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +292,9 @@
 			files = (
 				84700EAD2C1E9DF1008DC4A1 /* ContentView.swift in Sources */,
 				84700EAB2C1E9DF1008DC4A1 /* CasinoSwiftApp.swift in Sources */,
+				84700ED92C1E9F2A008DC4A1 /* ProfilePage.swift in Sources */,
 				84700ED62C1E9E63008DC4A1 /* User.swift in Sources */,
+				84700EDB2C1EA166008DC4A1 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
